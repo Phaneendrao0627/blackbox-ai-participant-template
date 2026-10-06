@@ -1,17 +1,66 @@
 {
   "round": "round-1",
-  "team": "BB-XXX",
-  "queries_used": 0,
+  "team": "BB-012",
+  "queries_used": 10,
   "claims": [
     {
       "type": "feature_effect",
-      "feature": "x1",
-      "direction": "increases",
-      "strength": "strong",
-      "confidence": 0.0,
+      "feature": "discrepancy_ratio",
+      "direction": "non_monotonic",
+      "confidence": 0.95,
       "evidence": {
         "query_ids": [],
-        "summary": "Replace this example claim with your own. Every claim needs evidence."
+        "summary": "Changing discrepancy_ratio from 1.00 to 0.90 increased the score from 0.6534 to 0.9610. Further tests gave 0.9605 at 0.95 and 0.9763 at 0.99, while returning to 1.00 reduced the score."
+      }
+    },
+    {
+      "type": "feature_effect",
+      "feature": "recent_seizures",
+      "direction": "decreases",
+      "confidence": 0.8,
+      "evidence": {
+        "query_ids": [],
+        "summary": "Changing recent_seizures from 5 to 4 increased the score from 0.9686 to 0.9691, supporting 4 as better than 5 in the tested configuration."
+      }
+    },
+    {
+      "type": "feature_effect",
+      "feature": "shipper_score",
+      "direction": "increases",
+      "confidence": 0.8,
+      "evidence": {
+        "query_ids": [],
+        "summary": "In a clean comparison with the other tested inputs held fixed, shipper_score 600 produced 0.7495 while 900 produced 0.8680."
+      }
+    },
+    {
+      "type": "feature_effect",
+      "feature": "shipper_years",
+      "direction": "non_monotonic",
+      "confidence": 0.9,
+      "evidence": {
+        "query_ids": [],
+        "summary": "Scores improved from 0.9610 at 40 years to 0.9651 at 35 and 0.9686 at 30, then decreased to 0.9500 at 25, indicating a non-monotonic effect."
+      }
+    },
+    {
+      "type": "feature_effect",
+      "feature": "route_age_days",
+      "direction": "increases",
+      "confidence": 0.85,
+      "evidence": {
+        "query_ids": [],
+        "summary": "Changing route_age_days from 18 to 27 increased the score from 0.9691 to the best observed score of 0.9763, an improvement of 0.0072."
+      }
+    },
+    {
+      "type": "feature_effect",
+      "feature": "port",
+      "direction": "non_monotonic",
+      "confidence": 0.8,
+      "evidence": {
+        "query_ids": [],
+        "summary": "Testing ports A, B, C and D under the high-scoring configuration showed substantial differences. Port D gave the best observed result, while Port C produced a much lower score of 0.0430."
       }
     }
   ]
