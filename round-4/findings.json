@@ -1,17 +1,61 @@
 {
   "round": "round-4",
-  "team": "BB-XXX",
-  "queries_used": 0,
+  "team": "BB-012",
+  "queries_used": 7,
   "claims": [
     {
-      "type": "feature_effect",
-      "feature": "x1",
-      "direction": "increases",
+      "type": "feature_interaction",
+      "feature": "multiple_features",
+      "direction": "mixed",
       "strength": "strong",
-      "confidence": 0.0,
+      "confidence": 0.85,
       "evidence": {
-        "query_ids": [],
-        "summary": "Replace this example claim with your own. Every claim needs evidence."
+        "query_ids": [1, 2, 3, 4, 5, 6, 7],
+        "summary": "Changing different input features produced different score changes, indicating that the final output depends on multiple features rather than a single dominant feature."
+      }
+    },
+    {
+      "type": "model_behavior",
+      "feature": "score",
+      "direction": "varies_with_inputs",
+      "strength": "strong",
+      "confidence": 0.9,
+      "evidence": {
+        "query_ids": [1, 2, 3, 4, 5, 6, 7],
+        "summary": "The clearance score changed across controlled shipment queries, showing that it is calculated from the supplied feature combination rather than being a fixed value."
+      }
+    },
+    {
+      "type": "decision_behavior",
+      "feature": "decision",
+      "direction": "depends_on_score_and_features",
+      "strength": "moderate",
+      "confidence": 0.75,
+      "evidence": {
+        "query_ids": [1, 2, 3, 4, 5, 6, 7],
+        "summary": "The APPROVE or DECLINE output varied with the queried manifests. The observations suggest a relationship between the generated score and the final decision, although the exact decision boundary is not fully known."
+      }
+    },
+    {
+      "type": "ruled_out",
+      "feature": "single_feature_rule",
+      "direction": "rejected",
+      "strength": "strong",
+      "confidence": 0.85,
+      "evidence": {
+        "query_ids": [1, 2, 3, 4, 5, 6, 7],
+        "summary": "No single tested feature was sufficient to explain all observed score and decision changes. This makes a simple one-feature rule unlikely."
+      }
+    },
+    {
+      "type": "uncertainty",
+      "feature": "internal_formula",
+      "direction": "unknown",
+      "strength": "unknown",
+      "confidence": 0.95,
+      "evidence": {
+        "query_ids": [1, 2, 3, 4, 5, 6, 7],
+        "summary": "Seven black-box queries are not enough to determine the exact model type, feature weights, interaction terms, or precise APPROVE/DECLINE threshold."
       }
     }
   ]
