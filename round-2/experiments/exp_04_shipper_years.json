@@ -1,0 +1,57 @@
+{
+  "experiment_id": "exp_04_shipper_years",
+  "hypothesis": "shipper_years has a local optimum rather than a strictly monotonic effect.",
+  "variable": "shipper_years",
+  "query_ids": [
+    "R2\u00b7134",
+    "R2\u00b730",
+    "R2\u00b737",
+    "R2\u00b732",
+    "R2\u00b733",
+    "R2\u00b741",
+    "R2\u00b743"
+  ],
+  "values_and_scores": [
+    {
+      "value": 28,
+      "score": 0.9743
+    },
+    {
+      "value": 29,
+      "score": 0.975
+    },
+    {
+      "value": 29.5,
+      "score": 0.976
+    },
+    {
+      "value": 30,
+      "score": 0.9763
+    },
+    {
+      "value": 31,
+      "score": 0.9765
+    },
+    {
+      "value": 31.5,
+      "score": 0.9758
+    },
+    {
+      "value": 32,
+      "score": 0.9759
+    },
+    {
+      "value": 33,
+      "score": 0.9747
+    },
+    {
+      "value": 35,
+      "score": 0.9745
+    },
+    {
+      "value": 40,
+      "score": 0.97
+    }
+  ],
+  "conclusion": "Performance peaked around 30\u201332 years, with 31 years giving the strongest tested result. Increasing shipper_years beyond this region reduced the score."
+}
