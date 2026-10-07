@@ -1,0 +1,32 @@
+{
+  "experiment_id": "exp_06_recent_seizures",
+  "hypothesis": "recent_seizures changes the score materially and may have a local optimum.",
+  "variable": "recent_seizures",
+  "query_ids": [
+    "R2\u00b767",
+    "R2\u00b763",
+    "R2\u00b764",
+    "R2\u00b765",
+    "R2\u00b756",
+    "R2\u00b755"
+  ],
+  "values_and_scores": [
+    {
+      "value": 0,
+      "score": 0.8868
+    },
+    {
+      "value": 3,
+      "score": 0.9619
+    },
+    {
+      "value": 4,
+      "score": 0.9765
+    },
+    {
+      "value": 5,
+      "score": 0.9759
+    }
+  ],
+  "conclusion": "The score increased sharply from 0 to 3\u20134 seizures. Four produced the best tested result, while five remained almost as strong."
+}
