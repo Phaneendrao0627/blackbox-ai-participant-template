@@ -1,0 +1,48 @@
+{
+  "round": "round-4",
+  "team": "BB-012",
+  "experiment": "route_age_days_x_transfers",
+  "purpose": "Test the Claude-planned interaction between route_age_days and transfers.",
+  "method": "Use the actual saved black-box observations, bucket the two features where needed, and compare mean score across combinations.",
+  "feature_a": "route_age_days",
+  "feature_b": "transfers",
+  "summary": [
+    {
+      "a": "(17.999, 24.0]",
+      "b": "(-0.001, 3.5]",
+      "mean_score": 0.9630136363636363,
+      "count": 22
+    },
+    {
+      "a": "(17.999, 24.0]",
+      "b": "(3.5, 6.0]",
+      "mean_score": 0.9664352941176472,
+      "count": 17
+    },
+    {
+      "a": "(24.0, 27.0]",
+      "b": "(-0.001, 3.5]",
+      "mean_score": 0.9419673076923077,
+      "count": 52
+    },
+    {
+      "a": "(24.0, 27.0]",
+      "b": "(3.5, 6.0]",
+      "mean_score": 0.9649836734693877,
+      "count": 49
+    },
+    {
+      "a": "(27.0, 60.0]",
+      "b": "(-0.001, 3.5]",
+      "mean_score": 0.8468,
+      "count": 1
+    },
+    {
+      "a": "(27.0, 60.0]",
+      "b": "(3.5, 6.0]",
+      "mean_score": 0.9301777777777779,
+      "count": 9
+    }
+  ],
+  "conclusion": "The grouped score pattern is evidence for possible interaction, but it is observational rather than a perfectly controlled causal test."
+}
