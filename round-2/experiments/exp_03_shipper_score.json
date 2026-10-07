@@ -1,0 +1,45 @@
+{
+  "experiment_id": "exp_03_shipper_score",
+  "hypothesis": "Increasing shipper_score will improve the model score, especially when moving out of the low-score region.",
+  "variable": "shipper_score",
+  "query_ids": [
+    "R2\u00b774",
+    "R2\u00b773",
+    "R2\u00b7142",
+    "R2\u00b7143",
+    "R2\u00b7141",
+    "R2\u00b7150",
+    "R2\u00b7136"
+  ],
+  "values_and_scores": [
+    {
+      "value": 315,
+      "score": 0.8741
+    },
+    {
+      "value": 600,
+      "score": 0.9485
+    },
+    {
+      "value": 866,
+      "score": 0.9755
+    },
+    {
+      "value": 872,
+      "score": 0.9755
+    },
+    {
+      "value": 887,
+      "score": 0.9751
+    },
+    {
+      "value": 890,
+      "score": 0.9774
+    },
+    {
+      "value": 896,
+      "score": 0.9765
+    }
+  ],
+  "conclusion": "Higher shipper_score strongly improved performance from the low range into the high range. Around 866\u2013900, scores were near a plateau, with 890 producing the best observed score in this experiment."
+}
