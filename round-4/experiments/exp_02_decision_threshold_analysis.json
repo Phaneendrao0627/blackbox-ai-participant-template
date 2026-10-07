@@ -1,0 +1,174 @@
+{
+  "round": "round-4",
+  "team": "BB-012",
+  "experiment": "exp_02_port",
+  "evidence_source": "Previously collected black-box query history used for reconstruction",
+  "feature": "port",
+  "method": "Vary one feature while holding all other shipment fields constant.",
+  "hypothesis": "Port has a strong categorical effect when all other shipment fields are fixed.",
+  "queries": [
+    {
+      "query_id": "R2 \u00b7 69",
+      "input": {
+        "container_count": 80.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "A",
+        "prior_shipments": 0.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 27.0,
+        "shipper_score": 900.0,
+        "shipper_years": 31.0,
+        "transfers": 0.0
+      },
+      "output": {
+        "score": 0.9743,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 70",
+      "input": {
+        "container_count": 80.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "B",
+        "prior_shipments": 0.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 27.0,
+        "shipper_score": 900.0,
+        "shipper_years": 31.0,
+        "transfers": 0.0
+      },
+      "output": {
+        "score": 0.9753,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 71",
+      "input": {
+        "container_count": 80.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "C",
+        "prior_shipments": 0.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 27.0,
+        "shipper_score": 900.0,
+        "shipper_years": 31.0,
+        "transfers": 0.0
+      },
+      "output": {
+        "score": 0.043,
+        "decision": "DECLINE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 94",
+      "input": {
+        "container_count": 80.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "D",
+        "prior_shipments": 0.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 27.0,
+        "shipper_score": 900.0,
+        "shipper_years": 31.0,
+        "transfers": 0.0
+      },
+      "output": {
+        "score": 0.9765,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 92",
+      "input": {
+        "container_count": 80.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "D",
+        "prior_shipments": 0.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 27.0,
+        "shipper_score": 900.0,
+        "shipper_years": 31.0,
+        "transfers": 0.0
+      },
+      "output": {
+        "score": 0.9765,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 75",
+      "input": {
+        "container_count": 80.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "D",
+        "prior_shipments": 0.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 27.0,
+        "shipper_score": 900.0,
+        "shipper_years": 31.0,
+        "transfers": 0.0
+      },
+      "output": {
+        "score": 0.9765,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 72",
+      "input": {
+        "container_count": 80.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "D",
+        "prior_shipments": 0.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 27.0,
+        "shipper_score": 900.0,
+        "shipper_years": 31.0,
+        "transfers": 0.0
+      },
+      "output": {
+        "score": 0.9765,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 68",
+      "input": {
+        "container_count": 80.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "D",
+        "prior_shipments": 0.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 27.0,
+        "shipper_score": 900.0,
+        "shipper_years": 31.0,
+        "transfers": 0.0
+      },
+      "output": {
+        "score": 0.9765,
+        "decision": "APPROVE"
+      }
+    }
+  ],
+  "observation": {
+    "score_min": 0.043,
+    "score_max": 0.9765,
+    "score_range": 0.9335,
+    "decisions_seen": [
+      "APPROVE",
+      "DECLINE"
+    ]
+  },
+  "conclusion": "Port C produced a very large score drop in the controlled test, including the only observed DECLINE in the available history.",
+  "confidence": 0.98
+}
