@@ -1,0 +1,49 @@
+{
+  "round": "round-4",
+  "team": "BB-012",
+  "experiment": "permutation_feature_importance",
+  "model": "Extra Trees",
+  "importance": [
+    {
+      "feature": "discrepancy_ratio",
+      "importance": 0.011723555416665792
+    },
+    {
+      "feature": "recent_seizures",
+      "importance": 0.006698411249997961
+    },
+    {
+      "feature": "route_age_days",
+      "importance": 0.0005125833333317326
+    },
+    {
+      "feature": "shipper_years",
+      "importance": 0.00021167791666427943
+    },
+    {
+      "feature": "shipper_score",
+      "importance": 0.00015587499999939725
+    },
+    {
+      "feature": "prior_shipments",
+      "importance": 0.00015285416666565335
+    },
+    {
+      "feature": "container_count",
+      "importance": 6.32766666658609e-05
+    },
+    {
+      "feature": "transfers",
+      "importance": 3.058999999953497e-05
+    },
+    {
+      "feature": "port",
+      "importance": 0.0
+    },
+    {
+      "feature": "declared_value",
+      "importance": -6.2899999999612575e-06
+    }
+  ],
+  "conclusion": "Permutation importance measures how much prediction quality drops when each raw input feature is shuffled."
+}
