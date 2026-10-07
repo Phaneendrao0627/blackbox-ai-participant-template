@@ -1,0 +1,34 @@
+{
+  "experiment_id": "exp_02_port",
+  "hypothesis": "The port setting affects the score materially.",
+  "variable": "port",
+  "query_ids": [
+    "R2\u00b768",
+    "R2\u00b769",
+    "R2\u00b770",
+    "R2\u00b771"
+  ],
+  "values_and_scores": [
+    {
+      "value": "A",
+      "score": 0.9743,
+      "decision": "APPROVE"
+    },
+    {
+      "value": "B",
+      "score": 0.9753,
+      "decision": "APPROVE"
+    },
+    {
+      "value": "C",
+      "score": 0.043,
+      "decision": "DECLINE"
+    },
+    {
+      "value": "D",
+      "score": 0.9765,
+      "decision": "APPROVE"
+    }
+  ],
+  "conclusion": "Port has a strong effect. Port D was strongest among the tested ports, while port C was a catastrophic failure mode."
+}
