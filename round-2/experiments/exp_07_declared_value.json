@@ -1,0 +1,46 @@
+{
+  "experiment_id": "exp_07_declared_value",
+  "hypothesis": "declared_value has a nonlinear effect, with moderate values outperforming extreme values.",
+  "variable": "declared_value",
+  "query_ids": [
+    "R2\u00b785",
+    "R2\u00b726",
+    "R2\u00b791",
+    "R2\u00b7168",
+    "R2\u00b7169",
+    "R2\u00b7119",
+    "R2\u00b7120",
+    "R2\u00b7121"
+  ],
+  "values_and_scores": [
+    {
+      "value": 1,
+      "score": 0.971
+    },
+    {
+      "value": 2,
+      "score": 0.9729
+    },
+    {
+      "value": 4,
+      "score": 0.9765
+    },
+    {
+      "value": 5,
+      "score": 0.9774
+    },
+    {
+      "value": 81,
+      "score": 0.9312
+    },
+    {
+      "value": 88,
+      "score": 0.9247
+    },
+    {
+      "value": 100,
+      "score": 0.8899
+    }
+  ],
+  "conclusion": "Moderate declared values around 4\u20135 performed best in the tested high-scoring region. Very high values caused substantial degradation."
+}
