@@ -1,0 +1,31 @@
+{
+  "experiment_id": "exp_08_insensitive_features",
+  "hypothesis": "container_count, prior_shipments, and transfers may have limited influence within the high-scoring region.",
+  "variables": [
+    "container_count",
+    "prior_shipments",
+    "transfers"
+  ],
+  "query_ids": [
+    "R2\u00b794",
+    "R2\u00b795",
+    "R2\u00b796",
+    "R2\u00b7104",
+    "R2\u00b7108",
+    "R2\u00b7123",
+    "R2\u00b7137",
+    "R2\u00b7150",
+    "R2\u00b7153",
+    "R2\u00b7155",
+    "R2\u00b7158",
+    "R2\u00b7162",
+    "R2\u00b7168",
+    "R2\u00b7169"
+  ],
+  "observations": [
+    "container_count values around 80\u2013100 repeatedly produced scores near 0.9765 in strong configurations.",
+    "prior_shipments values from 0 to approximately 20 showed little measurable change in comparable high-scoring configurations.",
+    "transfers values from 0 through 6 repeatedly produced scores around 0.976\u20130.9774 in comparable high-scoring configurations."
+  ],
+  "conclusion": "No strong independent effect was established for these three variables in the tested high-scoring region. They appear much less influential than port, discrepancy_ratio, shipper_score, route_age_days, recent_seizures, shipper_years, and declared_value."
+}
