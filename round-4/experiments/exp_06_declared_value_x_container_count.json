@@ -1,0 +1,24 @@
+{
+  "round": "round-4",
+  "team": "BB-012",
+  "experiment": "declared_value_x_container_count",
+  "purpose": "Test the Claude-planned interaction between declared_value and container_count.",
+  "method": "Use the actual saved black-box observations, bucket the two features where needed, and compare mean score across combinations.",
+  "feature_a": "declared_value",
+  "feature_b": "container_count",
+  "summary": [
+    {
+      "a": "(0.999, 4.0]",
+      "b": "(79.999, 100.0]",
+      "mean_score": 0.9563837209302326,
+      "count": 129
+    },
+    {
+      "a": "(4.0, 100.0]",
+      "b": "(79.999, 100.0]",
+      "mean_score": 0.9393857142857143,
+      "count": 21
+    }
+  ],
+  "conclusion": "The grouped score pattern is evidence for possible interaction, but it is observational rather than a perfectly controlled causal test."
+}
