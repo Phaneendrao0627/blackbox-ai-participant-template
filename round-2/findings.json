@@ -1,18 +1,139 @@
 {
-  "round": "round-2",
-  "team": "BB-XXX",
-  "queries_used": 0,
-  "claims": [
-    {
-      "type": "feature_effect",
-      "feature": "x1",
-      "direction": "increases",
-      "strength": "strong",
-      "confidence": 0.0,
-      "evidence": {
-        "query_ids": [],
-        "summary": "Replace this example claim with your own. Every claim needs evidence."
-      }
-    }
-  ]
+"round": "round-2",
+"team": "BB-012",
+"queries_used": 149,
+"claims": [
+{
+"type": "feature_effect",
+"feature": "discrepancy_ratio",
+"direction": "increases",
+"strength": "strong",
+"confidence": 0.98,
+"evidence": {
+"query_ids": ["R2·98", "R2·100", "R2·101", "R2·97", "R2·99", "R2·164", "R2·166", "R2·165", "R2·167", "R2·163"],
+"summary": "Increasing discrepancy_ratio from 0.0 to the 0.9–1.0 region substantially improves the score. Scores increased from 0.8134 at 0.0 to 0.9328 at 0.5, 0.9571 at 0.6, and approximately 0.976–0.977 in the 0.9–1.0 region."
+}
+},
+{
+"type": "feature_effect",
+"feature": "port",
+"direction": "non_monotonic",
+"strength": "strong",
+"confidence": 0.99,
+"evidence": {
+"query_ids": ["R2·68", "R2·69", "R2·70", "R2·71"],
+"summary": "Port has a major effect on the score. Port D produced 0.9765, A produced 0.9743, B produced 0.9753, while port C collapsed to 0.0430 and resulted in DECLINE."
+}
+},
+{
+"type": "feature_effect",
+"feature": "shipper_score",
+"direction": "increases",
+"strength": "strong",
+"confidence": 0.97,
+"evidence": {
+"query_ids": ["R2·74", "R2·73", "R2·142", "R2·143", "R2·141", "R2·150", "R2·136"],
+"summary": "Higher shipper_score strongly improves performance from the low range into the high range. Scores were 0.8741 at 315, 0.9485 at 600, and approximately 0.9755–0.9774 for values around 866–900. The highest observed score was 0.9774 at shipper_score 890."
+}
+},
+{
+"type": "feature_effect",
+"feature": "shipper_years",
+"direction": "non_monotonic",
+"strength": "moderate",
+"confidence": 0.94,
+"evidence": {
+"query_ids": ["R2·134", "R2·30", "R2·37", "R2·32", "R2·33", "R2·41", "R2·43"],
+"summary": "shipper_years shows a local optimum rather than a monotonic relationship. Scores increased toward the 30–32 year region, reaching 0.9765 at 31 years, then declined as years increased further."
+}
+},
+{
+"type": "feature_effect",
+"feature": "route_age_days",
+"direction": "non_monotonic",
+"strength": "strong",
+"confidence": 0.96,
+"evidence": {
+"query_ids": ["R2·83", "R2·84", "R2·144", "R2·88", "R2·29", "R2·36"],
+"summary": "route_age_days has a nonlinear effect. Performance is strongest around 24–27 days, with repeated high scores near 0.976–0.977, while older routes such as 45–60 days show substantial degradation."
+}
+},
+{
+"type": "feature_effect",
+"feature": "recent_seizures",
+"direction": "increases",
+"strength": "strong",
+"confidence": 0.96,
+"evidence": {
+"query_ids": ["R2·67", "R2·63", "R2·64", "R2·65", "R2·56", "R2·55"],
+"summary": "recent_seizures has a strong observed effect in the tested region. The score was 0.8868 at 0 seizures, increased to 0.9619 at 3, reached 0.9765 at 4, and remained high at 0.9759 at 5."
+}
+},
+{
+"type": "feature_effect",
+"feature": "declared_value",
+"direction": "non_monotonic",
+"strength": "strong",
+"confidence": 0.96,
+"evidence": {
+"query_ids": ["R2·85", "R2·26", "R2·91", "R2·168", "R2·169", "R2·119", "R2·120", "R2·121"],
+"summary": "declared_value performs best around 4–5 in the tested high-scoring region. Extreme values degrade performance substantially: values around 81–100 produced scores from approximately 0.8899 to 0.9312, while values 4–5 reached approximately 0.976–0.9774."
+}
+},
+{
+"type": "feature_effect",
+"feature": "container_count",
+"direction": "no_effect",
+"strength": "weak",
+"confidence": 0.86,
+"evidence": {
+"query_ids": ["R2·123", "R2·94", "R2·104", "R2·108", "R2·150"],
+"summary": "container_count showed little measurable influence within the high-scoring region. Values around 80–100 repeatedly produced scores near 0.9765, so no strong independent effect was established."
+}
+},
+{
+"type": "feature_effect",
+"feature": "prior_shipments",
+"direction": "no_effect",
+"strength": "weak",
+"confidence": 0.88,
+"evidence": {
+"query_ids": ["R2·94", "R2·95", "R2·96", "R2·51", "R2·137"],
+"summary": "prior_shipments produced little measurable change in the high-scoring region. Values from 0 through approximately 20 repeatedly produced scores around 0.9759–0.9765 under comparable configurations."
+}
+},
+{
+"type": "feature_effect",
+"feature": "transfers",
+"direction": "no_effect",
+"strength": "weak",
+"confidence": 0.88,
+"evidence": {
+"query_ids": ["R2·108", "R2·104", "R2·150", "R2·153", "R2·155", "R2·168"],
+"summary": "transfers showed little measurable effect within the high-scoring region. Values from 0 through 6 repeatedly produced scores around 0.976–0.9774 under comparable configurations."
+}
+},
+{
+"type": "interaction",
+"feature": "high_scoring_configuration",
+"direction": "increases",
+"strength": "strong",
+"confidence": 0.98,
+"evidence": {
+"query_ids": ["R2·150", "R2·153", "R2·155", "R2·158", "R2·162", "R2·168", "R2·169"],
+"summary": "The highest-scoring region combines port D or A, discrepancy_ratio around 0.9–1.0, recent_seizures around 4, route_age_days around 24–27, shipper_score around 866–900, shipper_years around 30–32, and declared_value around 4–5. Multiple configurations reached the best observed score of 0.9774."
+}
+},
+{
+"type": "failure_mode",
+"feature": "port",
+"direction": "decreases",
+"strength": "strong",
+"confidence": 0.99,
+"evidence": {
+"query_ids": ["R2·71"],
+"summary": "Port C is a catastrophic failure mode in the tested configuration, producing a score of 0.0430 and a DECLINE decision compared with approximately 0.974–0.977 for the other tested ports."
+}
+}
+]
 }
