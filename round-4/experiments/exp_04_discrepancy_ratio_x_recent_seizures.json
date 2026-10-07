@@ -1,0 +1,30 @@
+{
+  "round": "round-4",
+  "team": "BB-012",
+  "experiment": "discrepancy_ratio_x_recent_seizures",
+  "purpose": "Test the Claude-planned interaction between discrepancy_ratio and recent_seizures.",
+  "method": "Use the actual saved black-box observations, bucket the two features where needed, and compare mean score across combinations.",
+  "feature_a": "discrepancy_ratio",
+  "feature_b": "recent_seizures",
+  "summary": [
+    {
+      "a": "(-0.001, 0.9]",
+      "b": "(-0.001, 4.0]",
+      "mean_score": 0.9517353846153846,
+      "count": 130
+    },
+    {
+      "a": "(-0.001, 0.9]",
+      "b": "(4.0, 5.0]",
+      "mean_score": 0.97585,
+      "count": 10
+    },
+    {
+      "a": "(0.9, 1.0]",
+      "b": "(-0.001, 4.0]",
+      "mean_score": 0.96165,
+      "count": 10
+    }
+  ],
+  "conclusion": "The grouped score pattern is evidence for possible interaction, but it is observational rather than a perfectly controlled causal test."
+}
