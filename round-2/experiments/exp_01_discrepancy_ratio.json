@@ -1,0 +1,60 @@
+
+  "experiment_id": "exp_01_discrepancy_ratio",
+  "hypothesis": "Higher discrepancy_ratio values will produce higher scores, with the strongest performance near the upper end of the tested range.",
+  "variable": "discrepancy_ratio",
+  "query_ids": [
+    "R2\u00b798",
+    "R2\u00b7100",
+    "R2\u00b7101",
+    "R2\u00b797",
+    "R2\u00b799",
+    "R2\u00b7164",
+    "R2\u00b7166",
+    "R2\u00b7165",
+    "R2\u00b7167",
+    "R2\u00b7163"
+  ],
+  "values_and_scores": [
+    {
+      "value": 0.0,
+      "score": 0.8134
+    },
+    {
+      "value": 0.5,
+      "score": 0.9328
+    },
+    {
+      "value": 0.6,
+      "score": 0.9571
+    },
+    {
+      "value": 0.89,
+      "score": 0.9744
+    },
+    {
+      "value": 0.9,
+      "score": 0.9765
+    },
+    {
+      "value": 0.94,
+      "score": 0.9762
+    },
+    {
+      "value": 0.96,
+      "score": 0.977
+    },
+    {
+      "value": 0.97,
+      "score": 0.9773
+    },
+    {
+      "value": 0.99,
+      "score": 0.9766
+    },
+    {
+      "value": 1.0,
+      "score": 0.976
+    }
+  ],
+  "conclusion": "Low discrepancy_ratio values performed substantially worse. Scores became consistently high from about 0.9 through 1.0, with the best tested point at 0.97 reaching 0.9773."
+}
