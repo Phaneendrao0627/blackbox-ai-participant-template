@@ -1,0 +1,48 @@
+{
+  "round": "round-4",
+  "team": "BB-012",
+  "experiment": "port_x_discrepancy_ratio",
+  "purpose": "Test the Claude-planned interaction between port and discrepancy_ratio.",
+  "method": "Use the actual saved black-box observations, bucket the two features where needed, and compare mean score across combinations.",
+  "feature_a": "port",
+  "feature_b": "discrepancy_ratio",
+  "summary": [
+    {
+      "a": "A",
+      "b": "(-0.001, 0.9]",
+      "mean_score": 0.9748,
+      "count": 2
+    },
+    {
+      "a": "A",
+      "b": "(0.9, 1.0]",
+      "mean_score": 0.94668,
+      "count": 5
+    },
+    {
+      "a": "B",
+      "b": "(-0.001, 0.9]",
+      "mean_score": 0.9753,
+      "count": 1
+    },
+    {
+      "a": "C",
+      "b": "(-0.001, 0.9]",
+      "mean_score": 0.043,
+      "count": 1
+    },
+    {
+      "a": "D",
+      "b": "(-0.001, 0.9]",
+      "mean_score": 0.9596779411764705,
+      "count": 136
+    },
+    {
+      "a": "D",
+      "b": "(0.9, 1.0]",
+      "mean_score": 0.9766199999999999,
+      "count": 5
+    }
+  ],
+  "conclusion": "The grouped score pattern is evidence for possible interaction, but it is observational rather than a perfectly controlled causal test."
+}
