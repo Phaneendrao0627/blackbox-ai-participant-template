@@ -1,0 +1,154 @@
+{
+  "round": "round-4",
+  "team": "BB-012",
+  "experiment": "exp_01_discrepancy_ratio",
+  "evidence_source": "Previously collected black-box query history used for reconstruction",
+  "feature": "discrepancy_ratio",
+  "method": "Vary one feature while holding all other shipment fields constant.",
+  "hypothesis": "Changing discrepancy_ratio while holding other fields constant changes the score.",
+  "queries": [
+    {
+      "query_id": "R2 \u00b7 164",
+      "input": {
+        "container_count": 100.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.89,
+        "port": "D",
+        "prior_shipments": 20.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 23.0,
+        "shipper_score": 890.0,
+        "shipper_years": 31.0,
+        "transfers": 6.0
+      },
+      "output": {
+        "score": 0.9744,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 168",
+      "input": {
+        "container_count": 100.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "D",
+        "prior_shipments": 20.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 23.0,
+        "shipper_score": 890.0,
+        "shipper_years": 31.0,
+        "transfers": 6.0
+      },
+      "output": {
+        "score": 0.9774,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 162",
+      "input": {
+        "container_count": 100.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.9,
+        "port": "D",
+        "prior_shipments": 20.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 23.0,
+        "shipper_score": 890.0,
+        "shipper_years": 31.0,
+        "transfers": 6.0
+      },
+      "output": {
+        "score": 0.9774,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 166",
+      "input": {
+        "container_count": 100.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.94,
+        "port": "D",
+        "prior_shipments": 20.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 23.0,
+        "shipper_score": 890.0,
+        "shipper_years": 31.0,
+        "transfers": 6.0
+      },
+      "output": {
+        "score": 0.9762,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 165",
+      "input": {
+        "container_count": 100.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.96,
+        "port": "D",
+        "prior_shipments": 20.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 23.0,
+        "shipper_score": 890.0,
+        "shipper_years": 31.0,
+        "transfers": 6.0
+      },
+      "output": {
+        "score": 0.977,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 167",
+      "input": {
+        "container_count": 100.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.97,
+        "port": "D",
+        "prior_shipments": 20.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 23.0,
+        "shipper_score": 890.0,
+        "shipper_years": 31.0,
+        "transfers": 6.0
+      },
+      "output": {
+        "score": 0.9773,
+        "decision": "APPROVE"
+      }
+    },
+    {
+      "query_id": "R2 \u00b7 163",
+      "input": {
+        "container_count": 100.0,
+        "declared_value": 4.0,
+        "discrepancy_ratio": 0.99,
+        "port": "D",
+        "prior_shipments": 20.0,
+        "recent_seizures": 4.0,
+        "route_age_days": 23.0,
+        "shipper_score": 890.0,
+        "shipper_years": 31.0,
+        "transfers": 6.0
+      },
+      "output": {
+        "score": 0.9766,
+        "decision": "APPROVE"
+      }
+    }
+  ],
+  "observation": {
+    "score_min": 0.9744,
+    "score_max": 0.9774,
+    "score_range": 0.003,
+    "decisions_seen": [
+      "APPROVE"
+    ]
+  },
+  "conclusion": "The effect is small and non-monotonic around the tested high range; it matters, but is not a simple linear rule.",
+  "confidence": 0.82
+}
