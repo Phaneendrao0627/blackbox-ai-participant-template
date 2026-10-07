@@ -1,0 +1,36 @@
+{
+  "round": "round-4",
+  "team": "BB-012",
+  "experiment": "shipper_score_x_shipper_years",
+  "purpose": "Test the Claude-planned interaction between shipper_score and shipper_years.",
+  "method": "Use the actual saved black-box observations, bucket the two features where needed, and compare mean score across combinations.",
+  "feature_a": "shipper_score",
+  "feature_b": "shipper_years",
+  "summary": [
+    {
+      "a": "(314.999, 898.0]",
+      "b": "(27.999, 31.0]",
+      "mean_score": 0.9637575757575758,
+      "count": 33
+    },
+    {
+      "a": "(314.999, 898.0]",
+      "b": "(31.0, 40.0]",
+      "mean_score": 0.958211111111111,
+      "count": 9
+    },
+    {
+      "a": "(898.0, 900.0]",
+      "b": "(27.999, 31.0]",
+      "mean_score": 0.9493978947368421,
+      "count": 95
+    },
+    {
+      "a": "(898.0, 900.0]",
+      "b": "(31.0, 40.0]",
+      "mean_score": 0.9599923076923077,
+      "count": 13
+    }
+  ],
+  "conclusion": "The grouped score pattern is evidence for possible interaction, but it is observational rather than a perfectly controlled causal test."
+}
